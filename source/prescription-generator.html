@@ -1,0 +1,453 @@
+---
+layout: page
+title: 处方生成器
+description: 医院处方单生成工具
+date: 2025-12-22
+updated: 2025-12-22
+comments: false
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<style>
+  .prescription-form {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card);
+    border-radius: 16px;
+  }
+
+  .form-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed var(--block-border);
+  }
+
+  .form-section:last-child {
+    border-bottom: none;
+  }
+
+  .form-section h3 {
+    margin-bottom: 1rem;
+    color: var(--text-p0);
+    font-size: 1.2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-p0);
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--block-border);
+    border-radius: 8px;
+    background: var(--block);
+    color: var(--text-p0);
+    font-size: 1rem;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .btn-generate {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .btn-generate:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-generate:active {
+    transform: translateY(0);
+  }
+
+  .result-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--block);
+    border-radius: 12px;
+    display: none;
+  }
+
+  .result-container.show {
+    display: block;
+  }
+
+  .warning-box {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 152, 0, 0.1);
+    border-left: 4px solid #ff9800;
+    border-radius: 4px;
+  }
+
+  .prescription-preview {
+    background: white;
+    color: black;
+    padding: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-family: 'SimSun', 'Microsoft YaHei', serif;
+    font-size: 12px;
+    line-height: 1.6;
+    /* A5 尺寸比例: 148mm x 210mm */
+    width: 100%;
+    max-width: 592px;
+    min-height: 840px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media print {
+    @page {
+      size: A5 portrait;
+      margin: 10mm;
+    }
+
+    .prescription-preview {
+      width: 148mm;
+      height: 210mm;
+      border: none;
+      box-shadow: none;
+      page-break-after: always;
+    }
+
+    .warning-box,
+    .prescription-form,
+    .btn-generate {
+      display: none;
+    }
+  }
+
+  .prescription-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 2px solid #333;
+    margin-bottom: 1rem;
+  }
+
+  .prescription-header>div {
+    padding: 0.5rem;
+    border-right: 2px solid #333;
+  }
+
+  .prescription-header>div:last-child {
+    border-right: none;
+  }
+
+  .header-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .prescription-content {
+    line-height: 2;
+    margin-bottom: 2rem;
+  }
+
+  .prescription-footer {
+    text-align: right;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+  }
+</style>
+
+<div class="warning-box">
+  ⚠️ <strong>重要提示：</strong>本工具仅供学习参考使用，生成的处方单不具有法律效力，不可用于实际就医。
+</div>
+
+<div class="prescription-form">
+  <div class="form-section">
+    <h3>📋 基本信息</h3>
+
+    <div class="form-group">
+      <label for="hospital-name">医院名称</label>
+      <input type="text" id="hospital-name" placeholder="例如：××市人民医院">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="clinic-number">门诊号</label>
+        <input type="text" id="clinic-number" placeholder="例如：2025122200001">
+      </div>
+
+      <div class="form-group">
+        <label for="visit-time">就诊时间</label>
+        <input type="datetime-local" id="visit-time">
+      </div>
+    </div>
+
+    <div class="form-row-3">
+      <div class="form-group">
+        <label for="patient-name">姓名</label>
+        <input type="text" id="patient-name" placeholder="患者姓名">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">性别</label>
+        <select id="gender">
+          <option value="">请选择</option>
+          <option value="男">男</option>
+          <option value="女">女</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="age">年龄</label>
+        <input type="number" id="age" placeholder="年龄" min="0" max="150">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="contact">联系方式</label>
+        <input type="text" id="contact" placeholder="手机号码">
+      </div>
+
+      <div class="form-group">
+        <label for="department">科室</label>
+        <input type="text" id="department" placeholder="例如：精神科">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h3>📝 诊疗信息</h3>
+
+    <div class="form-group">
+      <label for="condition">病情演变</label>
+      <textarea id="condition" placeholder="描述患者病情的发展过程、主要症状、持续时间等..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="examination">辅助检查</label>
+      <textarea id="examination" placeholder="已完成的检查项目及结果，如血常规、影像学检查等..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="diagnosis">主要诊断</label>
+      <textarea id="diagnosis" placeholder="根据症状和检查结果给出的诊断..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="treatment">诊疗意见</label>
+      <textarea id="treatment" placeholder="治疗方案、用药建议、注意事项、复诊时间等..."></textarea>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h3>👨‍⚕️ 医师信息</h3>
+
+    <div class="form-group">
+      <label for="doctor-name">医师签名</label>
+      <input type="text" id="doctor-name" placeholder="医师姓名">
+    </div>
+  </div>
+
+  <button class="btn-generate" onclick="generatePrescription()">
+    📄 生成处方预览
+  </button>
+</div>
+
+<div class="result-container" id="result">
+  <h2>📝 处方预览</h2>
+  <div class="prescription-preview" id="preview"></div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+    <button class="btn-generate" onclick="downloadPDF()">
+      📄 下载PDF处方
+    </button>
+    <button class="btn-generate" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);"
+      onclick="window.print()">
+      🖨️ 打印处方
+    </button>
+  </div>
+</div>
+
+<script>
+  // 设置默认就诊时间为当前时间
+  document.addEventListener('DOMContentLoaded', function () {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    document.getElementById('visit-time').value = `${year}-${month}-${day}T${hours}:${minutes}`;
+  });
+
+  function generatePrescription() {
+    const hospitalName = document.getElementById('hospital-name').value;
+    const clinicNumber = document.getElementById('clinic-number').value;
+    const visitTime = document.getElementById('visit-time').value;
+    const patientName = document.getElementById('patient-name').value;
+    const gender = document.getElementById('gender').value;
+    const age = document.getElementById('age').value;
+    const contact = document.getElementById('contact').value;
+    const department = document.getElementById('department').value;
+    const condition = document.getElementById('condition').value;
+    const examination = document.getElementById('examination').value;
+    const diagnosis = document.getElementById('diagnosis').value;
+    const treatment = document.getElementById('treatment').value;
+    const doctorName = document.getElementById('doctor-name').value;
+
+    // 基础验证
+    if (!hospitalName || !patientName || !gender || !doctorName) {
+      alert('请填写必填信息（医院名称、姓名、性别、医师签名）');
+      return;
+    }
+
+    // 格式化时间
+    const formattedTime = visitTime ? new Date(visitTime).toLocaleString('zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    }) : '';
+
+    // 生成处方HTML
+    let html = `
+    <table style="width: 100%; border-collapse: collapse; border: 2px solid #000; margin-bottom: 1.5rem;">
+      <tr>
+        <td style="border: 1px solid #000; padding: 8px; font-weight: bold; text-align: center;" colspan="3"><strong>医院名称：</strong>${hospitalName || '___________'}</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #000; padding: 8px; width: 33.3%;"><strong>门诊号：</strong>${clinicNumber || '___________'}</td>
+        <td style="border: 1px solid #000; padding: 8px; width: 33.3%;"><strong>性别：</strong>${gender || '___'}</td>
+        <td style="border: 1px solid #000; padding: 8px; width: 33.3%;"><strong>年龄：</strong>${age || '___'}岁</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #000; padding: 8px;"><strong>姓名：</strong>${patientName || '___________'}</td>
+        <td style="border: 1px solid #000; padding: 8px;"><strong>联系方式：</strong>${contact || '___________'}</td>
+        <td style="border: 1px solid #000; padding: 8px;"><strong>科室：</strong>${department || '___________'}</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #000; padding: 8px; font-weight: bold; text-align: center;" colspan="3"><strong>就诊时间：</strong>${formattedTime || '___________'}</td>
+      </tr>
+    </table>
+    
+    <div style="border-bottom: 2px solid #333; margin: 1rem 0;"></div>
+    
+    <div style="margin-bottom: 1rem;">
+      <div style="font-weight: bold; margin-bottom: 0.3rem; font-size: 0.95rem;">病情演变：</div>
+      <div style="line-height: 1.5; text-indent: 2em; min-height: 40px; white-space: pre-wrap; font-size: 0.9rem;">${condition || '（未填写）'}</div>
+    </div>
+    
+    <div style="margin-bottom: 1rem;">
+      <div style="font-weight: bold; margin-bottom: 0.3rem; font-size: 0.95rem;">辅助检查：</div>
+      <div style="line-height: 1.5; text-indent: 2em; min-height: 40px; white-space: pre-wrap; font-size: 0.9rem;">${examination || '（未填写）'}</div>
+    </div>
+    
+    <div style="margin-bottom: 1rem;">
+      <div style="font-weight: bold; margin-bottom: 0.3rem; font-size: 0.95rem;">主要诊断：</div>
+      <div style="line-height: 1.5; text-indent: 2em; min-height: 30px; white-space: pre-wrap; font-size: 0.9rem;">${diagnosis || '（未填写）'}</div>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <div style="font-weight: bold; margin-bottom: 0.3rem; font-size: 0.95rem;">诊疗意见：</div>
+      <div style="line-height: 1.5; text-indent: 2em; min-height: 50px; white-space: pre-wrap; font-size: 0.9rem;">${treatment || '（未填写）'}</div>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <div style="font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">注意事项：</div>
+      <div style="line-height: 1.8; font-size: 0.85rem; text-indent: 2em;">
+        建议定期复诊，妥善保管药品，按医嘱服药，已告知常见药物不良反应详见说明书，服药后避免饮酒、驾驶、高空作业或操作危险机械。若病情加重或出现明显不良反应，随时就诊我院；若同时患有躯体疾病，建议到综合医院就诊。
+      </div>
+    </div>
+    
+    <div style="text-align: right; margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #999;">
+      <div style="margin-bottom: 0.3rem; font-size: 0.9rem;">医师签名：<span style="font-size: 1.1rem; font-weight: bold; margin-left: 0.5rem;">${doctorName}</span></div>
+      <div style="color: #666; font-size: 0.85rem;">处方日期：${new Date().toLocaleDateString('zh-CN')}</div>
+    </div>
+  `;
+
+    document.getElementById('preview').innerHTML = html;
+    document.getElementById('result').classList.add('show');
+
+    // 滚动到结果
+    document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const preview = document.getElementById('preview');
+
+    if (!preview || !preview.innerHTML) {
+      alert('请先生成处方预览');
+      return;
+    }
+
+    // 使用html2canvas将HTML转换为canvas
+    html2canvas(preview, {
+      scale: 2, // 提高清晰度
+      useCORS: true,
+      logging: false,
+      backgroundColor: '#ffffff'
+    }).then(canvas => {
+      const imgData = canvas.toDataURL('image/png');
+
+      // 创建PDF
+      const doc = new jsPDF({
+        orientation: 'portrait',
+        unit: 'mm',
+        format: [148, 210] // A5 尺寸
+      });
+
+      const imgWidth = 148;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+      doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+
+      // 获取患者姓名用于文件名
+      const patientName = document.getElementById('patient-name').value || '患者';
+      const fileName = `处方单_${patientName.replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '_')}_${new Date().getTime()}.pdf`;
+
+      doc.save(fileName);
+      alert('✅ PDF已生成并开始下载');
+    }).catch(error => {
+      console.error('生成PDF失败:', error);
+      alert('❌ PDF生成失败，请重试');
+    });
+  }
+
+</script>
