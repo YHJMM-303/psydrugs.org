@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![License](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-red)
+![Content License](https://img.shields.io/badge/content%20license-CC%20BY--NC--ND%204.0-red)
+![Code License](https://img.shields.io/badge/code%20license-GPL%20v2-brightgreen)
 ![Hexo](https://img.shields.io/badge/Hexo-8.1.1-blue)
 ![Theme](https://img.shields.io/badge/Theme-Stellar%201.33.1-blueviolet)
 
@@ -178,13 +179,10 @@ menubar:
 
 ## ⚖️ 版权协议
 
-本项目采用 **[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans)** 协议：
+- **内容（文章、报告、图片、数据）**：默认采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans) 协议，须署名、非商业、禁止演绎，详情见 [LICENSE-CONTENT](LICENSE-CONTENT)。
+- **代码（Hexo 配置、构建脚本、主题定制等）**：遵循 [GPL-2.0](LICENSE) 许可，可在相同许可证下复制、分发和修改。
 
-- ✅ **署名**（BY）：必须给出适当的署名
-- ❌ **非商业性使用**（NC）：不得用于商业目的
-- ❌ **禁止演绎**（ND）：不得修改、转换或以本作品为基础进行创作
-
-**禁止任何形式的复制、转载和商业使用。**
+如需额外授权或商业合作，请先与作者联系。
 
 ## ⚠️ 免责声明
 
