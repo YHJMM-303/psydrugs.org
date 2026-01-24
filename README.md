@@ -9,7 +9,7 @@
 
 **精神活性物质安全指南**
 
-[网站地址](https://psydrugs.icu) | [报告问题](https://github.com/yourusername/safeoverwiki/issues)
+[网站地址](https://psydrugs.org) | [报告问题](https://github.com/KrvyFT/psydrugs.org/issues)
 
 </div>
 
@@ -21,7 +21,6 @@
 
 本项目提供：
 - 🔬 **药物百科**：详细的药物信息、作用机制、风险评估
-- ⚠️ **联用指南**：药物相互作用、危险组合警告
 - 📝 **用户报告**：152 篇真实案例报告（RP-0 至 RP-151）
 - 🏥 **紧急处理**：过量急救、戒断症状管理
 - 💚 **康复指南**：戒断支持、心理恢复、重建生活

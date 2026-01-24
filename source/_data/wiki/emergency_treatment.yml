@@ -1,0 +1,17 @@
+name: 紧急处理
+title: 药物联用与紧急处理
+subtitle: '识别风险 | 立即行动'
+icon: /icons/combine.png
+cover: /icons/combine.png
+description: 提供药物联用的风险提示、过量迹象识别与简易急救流程，帮助在关键时刻快速应对。
+leftbar:
+  - tree
+  - recent
+rightbar:
+  - toc
+comment_title: '如有问题或建议，欢迎在评论区交流讨论。'
+comments:
+  service: false
+base_dir: /emergency_treatment/
+tree:
+  - index

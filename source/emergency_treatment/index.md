@@ -1,5 +1,5 @@
 ---
-wiki: combination
+wiki: emergency_treatment
 title: 药物联用安全指南
 menu_id: combination
 password: 123456
