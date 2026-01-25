@@ -10,61 +10,155 @@ comments: false
 
 欢迎来到药物板块，这里收录了常见药物的安全使用信息、风险提示与减害建议。
 
+### 危害程度说明
+- **★★★★★（极高风险）** 致命风险、严重成瘾性、呼吸抑制
+- **★★★★（高风险）** 高度成瘾性、意识障碍、严重生理危害
+- **★★★（中风险）** 代谢副作用、心电变化、中等成瘾性  
+- **★★（轻中风险）** 常见副作用但相对可控
+- **★（轻风险）** 最小风险
+
 ### 快速入口
 - [导论与使用须知](/drugs/others/introduction-to-overdose/)
-- [全部药物清单](/drugs/)
+- [效应指南](/effects/)
 
-### 分类导航
+---
 
-**阿片与镇痛**  _高风险：呼吸抑制、致命过量_
-- [阿片类药物概览](/drugs/opioids/阿片类药物/)
-- [可待因](/drugs/opioids/可待因/)，[二氢可待因](/drugs/opioids/二氢可待因/)
-- [吗啡](/drugs/opioids/吗啡/)，[杜冷丁](/drugs/opioids/杜冷丁/)，[曲马多](/drugs/opioids/曲马多/)
-- [地芬诺酯](/drugs/opioids/地芬诺酯/)，[喷托维林](/drugs/opioids/喷托维林/)，[奈福泮](/drugs/opioids/奈福泮/)
+## 中枢神经抑制类
 
-**解离与麻醉**  _高风险：意识障碍、呼吸抑制、跌落误伤_
-- [右美沙芬](/drugs/dissociatives/右美沙芬_愈美片/)
-- [氯胺酮](/drugs/dissociatives/氯胺酮/)
-- [金刚烷胺](/drugs/dissociatives/金刚烷胺/)
-- [美金刚](/drugs/dissociatives/美金刚/)
-- [替来他明](/drugs/dissociatives/替来他明/)
-- [丙泊酚](/drugs/dissociatives/丙泊酚/)
+### 镇痛与成瘾管制
 
-**镇静催眠 / 睡眠**  _中高风险：呼吸抑制、跌倒、记忆缺失_
-- [苯二氮卓类](/drugs/sedatives/苯二氮卓类药物/)，[Z 药](/drugs/sedatives/Z药物/)
-- [佐匹克隆](/drugs/sedatives/佐匹克隆/)，[唑吡坦](/drugs/sedatives/唑吡坦/)，[扎来普隆](/drugs/sedatives/扎来普隆/)
-- [水合氯醛](/drugs/sedatives/水合氯醛/)，[苯海拉明](/drugs/sedatives/苯海拉明/)，[苯海索](/drugs/sedatives/苯海索/)，[异丙嗪](/drugs/sedatives/异丙嗪/)
+- [阿片类药物](/drugs/opioids/阿片类药物/) ★★★★★
+- [吗啡](/drugs/opioids/吗啡/) ★★★★★
+- [可待因](/drugs/opioids/可待因/) ★★★★★
+- [二氢可待因](/drugs/opioids/二氢可待因/) ★★★★★
+- [杜冷丁](/drugs/opioids/杜冷丁/) ★★★★★
+- [地芬诺酯](/drugs/opioids/地芬诺酯/) ★★★★★
+- [曲马多](/drugs/opioids/曲马多/) ★★★★
+- [喷托维林](/drugs/opioids/喷托维林/) ★★★
+- [奈福泮](/drugs/opioids/奈福泮/) ★★★
 
-**抗精神病 / 情绪稳定**  _中等风险：代谢/心电副作用，镇静_
-- [喹硫平](/drugs/antipsychotics/喹硫平/)，[奥氮平](/drugs/antipsychotics/奥氮平/)，[利培酮](/drugs/antipsychotics/利培酮/)
-- [阿立哌唑](/drugs/antipsychotics/阿立哌唑/)，[氨磺必利](/drugs/antipsychotics/氨磺必利/)
-- [丙戊酸](/drugs/antipsychotics/丙戊酸/)，[拉莫三嗪](/drugs/antipsychotics/拉莫三嗪/)
-- [普瑞巴林](/drugs/antipsychotics/普瑞巴林/)，[加巴喷丁](/drugs/antipsychotics/加巴喷丁/)
+### 解离与麻醉
+- [氯胺酮](/drugs/dissociatives/氯胺酮/) ★★★★★
+- [右美沙芬/愈美片](/drugs/dissociatives/右美沙芬_愈美片/) ★★★★
+- [替来他明](/drugs/dissociatives/替来他明/) ★★★★
+- [金刚烷胺](/drugs/dissociatives/金刚烷胺/) ★★★★
+- [美金刚](/drugs/dissociatives/美金刚/) ★★★
+- [丙泊酚](/drugs/dissociatives/丙泊酚/) ★★★★
+- [地芬尼多](/drugs/dissociatives/地芬尼多/) ★★
 
-**抗抑郁与注意力**  _中等风险：血压/心率、情绪波动_
-- [血清素再摄取抑制剂](/drugs/antidepressants/血清素再摄取抑制剂/)
-- [托莫西汀](/drugs/antidepressants/托莫西汀/)，[安非他酮](/drugs/antidepressants/安非他酮/)，[哌醋甲酯](/drugs/antidepressants/哌醋甲酯/)
-- [苯丙胺类药物](/drugs/antidepressants/苯丙胺类药物/)，[咖啡因](/drugs/antidepressants/咖啡因/)，[烷胺类药物](/drugs/antidepressants/烷胺类药物/)
+### 镇静催眠 / 睡眠
+- [苯二氮卓类药物](/drugs/sedatives/苯二氮卓类药物/) ★★★★
+- [佐匹克隆](/drugs/sedatives/佐匹克隆/) ★★★
+- [唑吡坦](/drugs/sedatives/唑吡坦/) ★★★
+- [扎来普隆](/drugs/sedatives/扎来普隆/) ★★★
+- [Z药物](/drugs/sedatives/Z药物/) ★★★
+- [水合氯醛](/drugs/sedatives/水合氯醛/) ★★★
+- [苯海拉明](/drugs/sedatives/苯海拉明/) ★★
+- [苯海索](/drugs/sedatives/苯海索/) ★★
+- [异丙嗪](/drugs/sedatives/异丙嗪/) ★★
 
-**止吐 / 抗组胺 / 胃肠**  _相对较低：仍注意镇静与抗胆碱_
-- [止吐药](/drugs/antiemetics/止吐药/)，[地芬尼多](/drugs/dissociatives/地芬尼多/)，[茶苯海明](/drugs/antiemetics/茶苯海明/)
-- [苯海拉明](/drugs/sedatives/苯海拉明/)，[槟榔碱](/drugs/antiemetics/槟榔碱/)，[水合氯醛](/drugs/sedatives/水合氯醛/)
-- [吡拉西坦](/drugs/antiemetics/吡拉西坦/)，[茶氨酸](/drugs/supplements/茶氨酸/)，[茶](/drugs/supplements/茶/)
+---
 
-**补充剂与代谢调节**  _低至中：与其他药物交互需谨慎_
-- [酶抑制剂](/drugs/supplements/酶抑制剂/)，[补充剂](/drugs/supplements/补充剂/)
-- [苏糖酸镁](/drugs/supplements/苏糖酸镁/)
-- [茶碱](/drugs/supplements/茶碱/)
+## 中枢神经刺激与调节类
 
-**效应与安全**  _理解常见药物效应的特征和危害_
+### 抗精神病与情绪稳定
+- [普瑞巴林](/drugs/antipsychotics/普瑞巴林/) ★★★★
+- [喹硫平](/drugs/antipsychotics/喹硫平/) ★★★
+- [奥氮平](/drugs/antipsychotics/奥氮平/) ★★★
+- [利培酮](/drugs/antipsychotics/利培酮/) ★★★
+- [丙戊酸](/drugs/antipsychotics/丙戊酸/) ★★★
+- [阿立哌唑](/drugs/antipsychotics/阿立哌唑/) ★★
+- [氨磺必利](/drugs/antipsychotics/氨磺必利/) ★★
+- [加巴喷丁](/drugs/antipsychotics/加巴喷丁/) ★★
+- [拉莫三嗪](/drugs/antipsychotics/拉莫三嗪/) ★★
+
+### 抗抑郁与注意力
+- [血清素再摄取抑制剂](/drugs/antidepressants/血清素再摄取抑制剂/) ★★
+- [托莫西汀](/drugs/antidepressants/托莫西汀/) ★★
+- [安非他酮](/drugs/antidepressants/安非他酮/) ★★
+- [哌醋甲酯](/drugs/antidepressants/哌醋甲酯/) ★★
+- [咖啡因](/drugs/antidepressants/咖啡因/) ★★
+- [苯丙胺类药物](/drugs/antidepressants/苯丙胺类药物/) ★★
+- [烷胺类药物](/drugs/antidepressants/烷胺类药物/) ★★
+
+---
+
+## 其他治疗类物质
+
+### 止吐与抗组胺
+- [止吐药](/drugs/antiemetics/止吐药/) ★★
+- [茶苯海明](/drugs/antiemetics/茶苯海明/) ★★
+- [槟榔碱](/drugs/antiemetics/槟榔碱/) ★★
+- [吡拉西坦](/drugs/antiemetics/吡拉西坦/) ★★
+
+### 补充剂与代谢调节
+- [苏糖酸镁](/drugs/supplements/苏糖酸镁/) ★
+- [茶氨酸](/drugs/supplements/茶氨酸/) ★
+- [茶](/drugs/supplements/茶/) ★
+- [茶碱](/drugs/supplements/茶碱/) ★★
+- [补充剂](/drugs/supplements/补充剂/) ★
+- [酶抑制剂](/drugs/supplements/酶抑制剂/) ★★
+
+---
+
+## 设计药物与化学物质
+
+### 化学物质
+- [1-(3-甲基苯甲基)哌嗪（3-Me-BZP）](/drugs/chemical_materials/1-%283-甲基苯甲基%29哌嗪%EF%BC%883-Me-BZP%EF%BC%89/) ★★★★
+- [4-AcO-MET](/drugs/chemical_materials/4-AcO-MET/) ★★★★
+- [4-AcO-MiPT](/drugs/chemical_materials/4-AcO-MiPT/) ★★★★
+- [4-HO-DET](/drugs/chemical_materials/4-HO-DET/) ★★★★
+- [N-乙基戊酮（NEP）](/drugs/chemical_materials/N-乙基戊酮%EF%BC%88NEP%EF%BC%89/) ★★★★
+- [D2PM（二苯基脯氨醇）](/drugs/chemical_materials/D2PM%EF%BC%88二苯基脯氨醇%EF%BC%89/) ★★★
+- [噻奈普汀](/drugs/chemical_materials/噻奈普汀/) ★★★
+- [1-(噻吩-3-基)丙-2-胺](/drugs/chemical_materials/1-%28噻吩-3-基%29丙-2-胺/) ★★★
+- [α,N,N-三甲基色胺](/drugs/chemical_materials/α,N,N-三甲基色胺/) ★★★
+- [N,N-二丙基色胺](/drugs/chemical_materials/N,N-二丙基色胺/) ★★★
+- [乙基麦司卡林（Escaline）](/drugs/chemical_materials/乙基麦司卡林%EF%BC%88Escaline%EF%BC%89%20-%20合成迷幻物质科普/) ★★★
+- [异丙斯卡林（Isoproscaline）](/drugs/chemical_materials/异丙斯卡林%EF%BC%88Isoproscaline%EF%BC%89%20-%20苯乙胺类化合物科普/) ★★★
+- [普鲁斯卡林（普罗司卡林）](/drugs/chemical_materials/普鲁斯卡林%EF%BC%88普罗司卡林%EF%BC%89%20-%20致幻药物科普/) ★★★
+- [1-胡椒基哌嗪（MDBZP）](/drugs/chemical_materials/1-胡椒基哌嗪%EF%BC%88MDBZP%EF%BC%89/) ★★★
+- [2-AT（1,2,3,4-四氢萘-2-胺）](/drugs/chemical_materials/2-AT%EF%BC%881,2,3,4-四氢萘-2-胺%EF%BC%89/) ★★★
+- [2-二苯甲基吡咯烷（Desoxy-D2PM）](/drugs/chemical_materials/2-二苯甲基吡咯烷%EF%BC%88Desoxy-D2PM%EF%BC%89/) ★★
+- [5-甲氧基亚甲酮](/drugs/chemical_materials/5-甲氧基亚甲酮/) ★★★
+- [N-异丙基色胺](/drugs/chemical_materials/N-异丙基色胺/) ★★
+- [N-乙基-1-(4-甲氧基苯基)丙-2-胺(PMEA)](/drugs/chemical_materials/N-乙基-1-%284-甲氧基苯基%29丙-2-胺%28PMEA%29/) ★★
+- [二甲卡因](/drugs/chemical_materials/二甲卡因/) ★★★
+- [加波沙朵（Gaboxadol）](/drugs/chemical_materials/加波沙朵%EF%BC%88Gaboxadol%EF%BC%89%20-%20GABA类化合物科普/) ★★
+- [卡立普多（Carisoprodol）](/drugs/chemical_materials/卡立普多%EF%BC%88Carisoprodol%EF%BC%89%20-%20肌肉松弛剂科普/) ★★
+- [4-O-去甲基麦司卡林](/drugs/chemical_materials/4-O-去甲基麦司卡林%20-%20苯乙胺类生物碱科普/) ★★
+- [硫代丙胺](/drugs/chemical_materials/硫代丙胺/) ★
+
+---
+
+## 其他物质
+
+- [麦角酸二乙酰胺](/drugs/others/麦角酸二乙酰胺/) ★★★★★
+- [一氧化二氮](/drugs/others/一氧化二氮/) ★★★★
+- [亚硝酸叔丁酯](/drugs/others/亚硝酸叔丁酯/) ★★★★
+- [肉豆蔻醚](/drugs/others/肉豆蔻醚/) ★★★★
+- [依托咪酯](/drugs/others/依托咪酯/) ★★★
+- [双氢麦角毒碱](/drugs/others/双氢麦角毒碱/) ★★★
+- [噻加宾](/drugs/others/噻加宾/) ★★★
+- [3-羟基芬纳西泮](/drugs/others/3-羟基芬纳西泮/) ★★★
+- [大麻二酚](/drugs/others/大麻二酚/) ★★
+- [甲溴喹酮](/drugs/others/甲溴喹酮/) ★★
+- [维加巴特林](/drugs/others/维加巴特林/) ★★
+- [1,4-丁二醇](/drugs/others/1,4-丁二醇/) ★★★★
+- [巴氯芬](/drugs/others/巴氯芬/) ★★
+- [乙醇](/drugs/others/乙醇/) ★★★
+- [鸦片](/drugs/others/鸦片/) ★★★★★
+- [TPM](/drugs/others/TPM/) ★★
+- [复方专题](/drugs/others/compound/) ★★
+
+---
+
+## 效应与机制理解
+
 - [解离](/effects/Dissociation/) — 精神与知觉分离
 - [反解离](/effects/Antidissociation/) — 解离的对立状态（危险）
 - [谵妄](/effects/Delirium/) — 抗胆碱能精神异常
 
-**其他专题**
-- [复方专题](/drugs/others/compound/)
-- [酒精](/drugs/others/乙醇/)
-- [巴氯芬](/drugs/others/巴氯芬/)
-- [TPM](/drugs/others/TPM/)
+---
 
-> 信息仅供参考，务必在专业医师指导下用药。
+> **免责声明**：本网站提供的信息仅供教育和减害目的。使用任何物质都具有潜在风险，务必在专业医师指导下进行。信息准确性不保证，使用者需自行甄别。
