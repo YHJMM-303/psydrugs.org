@@ -19,74 +19,74 @@ tree:
     - /
     - index
   '解离与麻醉':
-    - KTM
-    - DXM
-    - DXM/HTCT5THP
-    - DXM/The_harm_of_dextromethorphan
-    - ATD
-    - MMT
-    - TTM
-    - PPF
+    - 氯胺酮
+    - 右美沙芬_愈美片
+    - 右美沙芬_愈美片/HTCT5THP
+    - 右美沙芬_愈美片/The_harm_of_dextromethorphan
+    - 金刚烷胺
+    - 美金刚
+    - 替来他明
+    - 丙泊酚
   '阿片与镇痛':
-    - Opioids
-    - CDI
-    - DHCDI
+    - 阿片类药物
+    - 可待因
+    - 二氢可待因
     - DHCDI/OAR
-    - MOP
-    - PPD
-    - DPX
-    - TMD
-    - PVR
-    - NFP
+    - 吗啡
+    - 杜冷丁
+    - 地芬诺酯
+    - 曲马多
+    - 喷托维林
+    - 奈福泮
   '镇静催眠 / 睡眠':
-    - BZD
-    - ZD
-    - ZPC
-    - ZPD
-    - ZPO
-    - CLH
-    - DPH
-    - THP
-    - PMZ
+    - 苯二氮卓类药物
+    - Z药物
+    - 佐匹克隆
+    - 唑吡坦
+    - 扎来普隆
+    - 水合氯醛
+    - 苯海拉明
+    - 苯海索
+    - 异丙嗪
   '抗精神病 / 情绪稳定':
-    - ARP
-    - ASP
-    - QTP
-    - OZP
-    - RPD
-    - VPA
-    - LTG
-    - PR
-    - GBP
+    - 阿立哌唑
+    - 氨磺必利
+    - 喹硫平
+    - 奥氮平
+    - 利培酮
+    - 丙戊酸
+    - 拉莫三嗪
+    - 普瑞巴林
+    - 加巴喷丁
   '抗抑郁与注意力':
-    - SRIs
-    - TXT
-    - BPP
-    - RTL
-    - AMs
-    - CFI
+    - 血清素再摄取抑制剂
+    - 托莫西汀
+    - 安非他酮
+    - 哌醋甲酯
+    - 苯丙胺类药物
+    - 咖啡因
   '止吐 / 抗组胺 / 胃肠':
-    - AES
-    - DPD
-    - DMH
-    - DPH
-    - ACL
-    - CLH
-    - PCT
-    - TAN
-    - TEA
+    - 止吐药
+    - 地芬尼多
+    - 茶苯海明
+    - 苯海拉明
+    - 槟榔碱
+    - 水合氯醛
+    - 吡拉西坦
+    - 茶氨酸
+    - 茶
   '补充剂与代谢调节':
-    - EI
-    - SPM
-    - MGT
-    - MGT/OAR
-    - TPL
+    - 酶抑制剂
+    - 补充剂
+    - 苏糖酸镁
+    - 苏糖酸镁/OAR
+    - 茶碱
   '其他':
     - compound
-    - EtOH
-    - BCF
-    - PMZ
-    - PCT
+    - 乙醇
+    - 巴氯芬
+    - 异丙嗪
+    - 吡拉西坦
     - TPM
   '未分组':
-    - ADD
+    - 烷胺类药物

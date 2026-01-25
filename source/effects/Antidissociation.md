@@ -11,7 +11,7 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 # 反解离
 
-**反解离(Antidissociation)** 是解离的对立状态。某些药物（如[苏糖酸镁](/drugs/MGT)）具有反解离作用。
+**反解离(Antidissociation)** 是解离的对立状态。某些药物（如[苏糖酸镁](/drugs/supplements/苏糖酸镁)）具有反解离作用。
 
 ## 特征
 
@@ -30,7 +30,7 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 ## 相关药物
 
-- [苏糖酸镁](/drugs/MGT) - 强力反解离剂
+- [苏糖酸镁](/drugs/supplements/苏糖酸镁) - 强力反解离剂
 
 ## 安全使用
 
@@ -38,7 +38,7 @@ dateCreated: 2024-05-13T13:24:14.619Z
 - 一周内不要摄入大于36g
 - 每次不要摄入大于6g
 - 若察觉到异常反解离状况（睡眠时间减少），请立刻断药
-- 可使用[酒](/drugs/EtOH)、[右美沙芬](/drugs/DXM)、[美金刚](/drugs/MMT)来反制兴奋性毒性
+- 可使用[酒](/drugs/others/乙醇)、[右美沙芬](/drugs/dissociatives/右美沙芬_愈美片)、[美金刚](/drugs/dissociatives/美金刚)来反制兴奋性毒性
 
 ---
 

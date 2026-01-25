@@ -11,7 +11,7 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 # 谵妄
 
-**谵妄(Delirium)** 是由抗胆碱能物质（如[苯海拉明](/drugs/DPH)、[茶苯海明](/drugs/DMH)、[地芬尼多](/drugs/DPD)）诱导的精神异常状态，表现为幻觉、混乱和精神病症状。
+**谵妄(Delirium)** 是由抗胆碱能物质（如[苯海拉明](/drugs/sedatives/苯海拉明)、[茶苯海明](/drugs/antiemetics/茶苯海明)、[地芬尼多](/drugs/dissociatives/地芬尼多)）诱导的精神异常状态，表现为幻觉、混乱和精神病症状。
 
 ## 特征
 
@@ -23,9 +23,9 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 ## 相关药物
 
-- [苯海拉明](/drugs/DPH)
-- [茶苯海明](/drugs/DMH)
-- [地芬尼多](/drugs/DPD)
+- [苯海拉明](/drugs/sedatives/苯海拉明)
+- [茶苯海明](/drugs/antiemetics/茶苯海明)
+- [地芬尼多](/drugs/dissociatives/地芬尼多)
 - [东莨菪碱](/drugs/ATP)（待补充）
 
 ## 危害
@@ -34,7 +34,7 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 ## 反制
 
-可以使用乙酰胆碱酯酶抑制剂来反制谵妄症状。详见 [酶抑制剂](/drugs/EI/)。
+可以使用乙酰胆碱酯酶抑制剂来反制谵妄症状。详见 [酶抑制剂](/drugs/supplements/酶抑制剂/)。
 
 ---
 

@@ -11,7 +11,7 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 # 解离
 
-**解离(Dissociation)** 是一种精神和知觉的分离状态，使用者可能会感受到自己的身体与意识分离。这是某些解离剂（如[右美沙芬](/drugs/DXM)、[氯胺酮](/drugs/KTM)）的主要药物效应。
+**解离(Dissociation)** 是一种精神和知觉的分离状态，使用者可能会感受到自己的身体与意识分离。这是某些解离剂（如[右美沙芬](/drugs/dissociatives/右美沙芬_愈美片)、[氯胺酮](/drugs/KTM)）的主要药物效应。
 
 ## 特征
 
@@ -23,10 +23,10 @@ dateCreated: 2024-05-13T13:24:14.619Z
 
 ## 相关药物
 
-- [右美沙芬](/drugs/DXM)
+- [右美沙芬](/drugs/dissociatives/右美沙芬_愈美片)
 - [氯胺酮](/drugs/KTM)
-- [普瑞巴林](/drugs/PR)
-- [加巴喷丁](/drugs/GBP)
+- [普瑞巴林](/drugs/antipsychotics/普瑞巴林)
+- [加巴喷丁](/drugs/antipsychotics/加巴喷丁)
 
 ## 反制
 
