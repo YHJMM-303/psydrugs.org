@@ -88,5 +88,30 @@ tree:
     - 异丙嗪
     - 吡拉西坦
     - TPM
+  '化学物质':
+    - chemical_aterials/1-(3-甲基苯甲基)哌嗪（3-Me-BZP）
+    - chemical_aterials/1-(噻吩-3-基)丙-2-胺
+    - chemical_aterials/1-胡椒基哌嗪（MDBZP）
+    - chemical_aterials/2-AT（1,2,3,4-四氢萘-2-胺）
+    - chemical_aterials/2-二苯甲基吡咯烷（Desoxy-D2PM）
+    - chemical_aterials/4-AcO-MET
+    - chemical_aterials/4-AcO-MiPT
+    - chemical_aterials/4-HO-DET
+    - chemical_aterials/4-O-去甲基麦司卡林 - 苯乙胺类生物碱科普
+    - chemical_aterials/5-甲氧基亚甲酮
+    - chemical_aterials/D2PM（二苯基脯氨醇）
+    - chemical_aterials/N,N-二丙基色胺
+    - chemical_aterials/N-乙基-1-(4-甲氧基苯基)丙-2-胺(PMEA)
+    - chemical_aterials/N-乙基戊酮（NEP）
+    - chemical_aterials/N-异丙基色胺
+    - chemical_aterials/α,N,N-三甲基色胺
+    - chemical_aterials/乙基麦司卡林（Escaline） - 合成迷幻物质科普
+    - chemical_aterials/二甲卡因
+    - chemical_aterials/加波沙朵（Gaboxadol） - GABA类化合物科普
+    - chemical_aterials/卡立普多（Carisoprodol） - 肌肉松弛剂科普
+    - chemical_aterials/噻奈普汀
+    - chemical_aterials/异丙斯卡林（Isoproscaline） - 苯乙胺类化合物科普
+    - chemical_aterials/普鲁斯卡林（普罗司卡林） - 致幻药物科普
+    - chemical_aterials/硫代丙胺
   '未分组':
     - 烷胺类药物

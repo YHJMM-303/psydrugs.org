@@ -8,7 +8,7 @@ tags:
 editor: markdown
 dateCreated: 2024-04-05T07:11:58.738Z
 ---
-> 请读者先看[右美沙芬](/drugs/DXM)、[解离](/effects/Dissociation)、[反解离](/effects/Antidissociation)
+> 请读者先看[右美沙芬](/drugs/dissociatives/右美沙芬_愈美片)、[解离](/effects/Dissociation)、[反解离](/effects/Antidissociation)
 
 
 ## 综述
