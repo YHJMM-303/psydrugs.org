@@ -12,16 +12,16 @@ menu_id: reports
 
 ## 📋 报告分类
 
-### [PsyDrugs 报告](/reports/pwd-reports/)
+### [PsyDrugs 报告](/reports/pdw-reports/)
 
 PsyDrugs 原创用户报告，包含详细的药物使用记录和专业分析：
 
 | 报告编号 | 标题 | 报告者 |
 |---------|------|--------|
-| [报告 1](/reports/pwd-reports/RP-1/) | DXM双酶抑制上了五高 | 小yi |
-| [报告 2](/reports/pwd-reports/RP-2/) | 异丙斯卡林静脉注射 | krvy |
-| [报告 3](/reports/pwd-reports/RP-3/) | 右美沙芬/愈美片 | [数据删除] |
-| [报告 4](/reports/pwd-reports/RP-4/) | 金刚烷胺/安非他酮 | krvy |
+| [报告 1](/reports/pdw-reports/RP-1/) | DXM双酶抑制上了五高 | 小yi |
+| [报告 2](/reports/pdw-reports/RP-2/) | 异丙斯卡林静脉注射 | krvy |
+| [报告 3](/reports/pdw-reports/RP-3/) | 右美沙芬/愈美片 | [数据删除] |
+| [报告 4](/reports/pdw-reports/RP-4/) | 金刚烷胺/安非他酮 | krvy |
 
 ⚠️ **警告**：这些报告描述的行为存在极高风险，仅供学习和警示用途。
 

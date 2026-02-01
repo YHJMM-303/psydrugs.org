@@ -16,16 +16,16 @@ menu_id: reports
 
 | 编号 | 标题 | 报告者 | 主要药物 | 日期 |
 |------|------|--------|---------|------|
-| [报告 1](/reports/pwd-reports/RP-1/) | DXM双酶抑制上了五高 | 小yi | 右美沙芬 + 氟伏沙明 + 安非他酮 + 普瑞巴林 | 2025-12-22 |
-| [报告 2](/reports/pwd-reports/RP-2/) | 异丙斯卡林静脉注射 | krvy | Isoproscaline (IV) | 2026-01-25 |
-| [报告 3](/reports/pwd-reports/RP-3/) | 右美沙芬/愈美片 | [数据删除] | 右美沙芬 + 双酶抑制 | 2025-12-27 |
-| [报告 4](/reports/pwd-reports/RP-4/) | 金刚烷胺/安非他酮 | krvy | 金刚烷胺 + 安非他酮 | 2026-01-26 |
+| [报告 1](/reports/pdw-reports/RP-1/) | DXM双酶抑制上了五高 | 小yi | 右美沙芬 + 氟伏沙明 + 安非他酮 + 普瑞巴林 | 2025-12-22 |
+| [报告 2](/reports/pdw-reports/RP-2/) | 异丙斯卡林静脉注射 | krvy | Isoproscaline (IV) | 2026-01-25 |
+| [报告 3](/reports/pdw-reports/RP-3/) | 右美沙芬/愈美片 | [数据删除] | 右美沙芬 + 双酶抑制 | 2025-12-27 |
+| [报告 4](/reports/pdw-reports/RP-4/) | 金刚烷胺/安非他酮 | krvy | 金刚烷胺 + 安非他酮 | 2026-01-26 |
 
 ---
 
 ## 📖 详细报告
 
-### [报告 1 - DXM双酶抑制上了五高](/reports/pwd-reports/RP-1/)
+### [报告 1 - DXM双酶抑制上了五高](/reports/pdw-reports/RP-1/)
 
 **报告者：** 小yi  
 **处理报告者：** 天晓、小yi  
@@ -49,7 +49,7 @@ menu_id: reports
 
 ---
 
-### [报告 2 - 异丙斯卡林静脉注射](/reports/pwd-reports/RP-2/)
+### [报告 2 - 异丙斯卡林静脉注射](/reports/pdw-reports/RP-2/)
 
 **报告者：** krvy  
 **报告时间：** 2026.01.25
@@ -70,7 +70,7 @@ menu_id: reports
 
 ---
 
-### [报告 3 - 右美沙芬/愈美片](/reports/pwd-reports/RP-3/)
+### [报告 3 - 右美沙芬/愈美片](/reports/pdw-reports/RP-3/)
 
 **报告者：** [数据删除]  
 **记录报告者：** 天晓  
@@ -88,7 +88,7 @@ menu_id: reports
 
 ---
 
-### [报告 4 - 金刚烷胺/安非他酮](/reports/pwd-reports/RP-4/)
+### [报告 4 - 金刚烷胺/安非他酮](/reports/pdw-reports/RP-4/)
 
 **报告者：** krvy  
 **报告时间：** 2026.01.26
