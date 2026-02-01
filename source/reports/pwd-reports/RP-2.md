@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 报告153-异丙斯卡林静脉注射
-order: 153
+title: 报告2-异丙斯卡林静脉注射
+order: 152
 date: 2026-1-25 06:07:13
 updated: 2026-1-25 06:07:13
 categories: [报告]

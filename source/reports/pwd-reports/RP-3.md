@@ -1,14 +1,14 @@
 ---
 layout: page
-title: 右美沙芬/愈美片
+title: 报告3-右美沙芬/愈美片
 date: 2025-12-27 00:00:00
 updated: 2025-12-27 00:00:00
 categories: [报告]
 tags:
   - 用户报告
-wiki: drugs
-article:
-  type: story # tech/story
+order: 153
+menu_id: reports
+wiki: reports
 ---
 报告者：【数据删除】
 记录报告者：天晓

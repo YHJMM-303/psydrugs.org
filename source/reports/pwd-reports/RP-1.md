@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 报告152-dxm双酶抑制上了五高
+title: 报告1-dxm双酶抑制上了五高
 date: 2025-12-27 00:00:00
 updated: 2025-12-27 00:00:00
 categories:
@@ -8,9 +8,8 @@ categories:
 tags:
   - 案例分析
   - 用户报告
-wiki: drugs
-article:
-type: story
+menu_id: reports
+wiki: reports
 ---
 
 报告者：小yi

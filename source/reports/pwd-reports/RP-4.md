@@ -1,14 +1,14 @@
 ---
 layout: page
-title: 金刚烷胺/安非他酮
+title: 报告4-金刚烷胺/安非他酮
 date: 2025-12-27 00:00:00
 updated: 2025-12-27 00:00:00
 categories: [报告]
 tags:
   - 用户报告
-wiki: drugs
-article:
-  type: story # tech/story
+order: 154
+menu_id: reports
+wiki: reports
 ---
 
 报告者：krvy
