@@ -17,6 +17,7 @@ tree:
   '报告总览':
     - index
   'psydrugs 报告':
+    - pwd-reports/index
     - pwd-reports/RP-1
     - pwd-reports/RP-2
     - pwd-reports/RP-3
